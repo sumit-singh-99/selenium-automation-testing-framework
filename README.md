@@ -1,9 +1,15 @@
 Certainly! Here's the complete README.md file with the framework overview, project structure, usage instructions, Jenkins pipeline configuration, Docker containerization, and contribution guidelines:
 
 ```markdown
-# Python Selenium pytest Framework
+# Selenium Automation Testing Framework
 
 This is a Python Selenium pytest framework designed for automated testing of web applications. Frameworks provide a structured approach to software development, and in the context of testing, they offer a systematic way to organize, execute, and maintain tests.
+
+### Author
+
+**Sumit Singh**
+
+Python-based Selenium automation framework developed for automated functional and regression testing of web applications using PyTest and Page Object Model (POM).
 
 ## Framework Overview
 
@@ -19,6 +25,14 @@ The framework follows a modular architecture and utilizes several key components
 
 5. **Reporting**: After test execution, detailed test reports are generated in HTML format (`reports/report.html`). These reports provide insights into test results, including passed tests, failed tests, and any errors encountered during execution.
 
+## Future Enhancements
+
+- Jenkins CI/CD Integration
+- Parallel Test Execution
+- Cross-Browser Testing
+- Docker-Based Test Execution
+- Email Report Notifications
+
 ## Benefits of the Framework
 
 - **Modularity**: The framework's modular structure promotes code reusability and maintainability. Test scripts, page objects, and utility functions are organized into separate modules, making it easier to manage and update individual components.
@@ -29,36 +43,48 @@ The framework follows a modular architecture and utilizes several key components
 
 - **Integration**: The framework seamlessly integrates with other tools and technologies commonly used in the software development lifecycle. This includes continuous integration servers like Jenkins, version control systems like Git, and containerization platforms like Docker.
 
+## Test Coverage
+
+The framework currently supports automated testing for:
+
+- Login Functionality
+- Logout Functionality
+- Product Search
+- Form Validation
+- Navigation Flows
+- Regression Test Scenarios
+- UI Element Verification
+
 ## Project Structure
 
-├── config.ini                 # Configuration file for storing test parameters
-├── Dockerfile                 # Docker configuration file
-├── Jenkinsfile                # Jenkins pipeline configuration
-├── logs/                      # Directory to store test logs
-│   └── test_log.log           # Example test log file
-├── POM/                       # Page Object Model directory
-│   ├── __init__.py            # Initialization file for POM package
-│   ├── locators/              # Directory for storing web element locators
-│   │   └── swag_labs_locators.py  # Example locator file
-│   ├── notifications/         # Directory for storing notification messages
-│   │   └── swag_labs_messages.py  # Example message file
-│   └── pages/                 # Directory for storing page objects
-│       ├── base_page.py       # Base page object class
-│       ├── __init__.py        # Initialization file for pages package
-│       └── swag_labs_pages.py  # Example page object file
-├── pytest.ini                 # pytest configuration file
-├── reports/                   # Directory to store test reports
-│   ├── assets/                # Directory for report assets (e.g., screenshots)
-│   └── report.html            # Example HTML test report
-├── requirements.txt           # File listing required Python packages
-├── tests/                     # Directory containing test scripts
-│   ├── conftest.py            # pytest configuration file for fixtures
-│   ├── test_setup.py          # Example test setup file
-│   └── test_swag_labs.py      # Example test script
-└── utils/                     # Directory containing utility modules
-    ├── data/                  # Directory for test data files
-    ├── helper/                # Directory for helper modules
-    └── screenshots/           # Directory to store screenshots captured during tests
+├── config.ini # Configuration file for storing test parameters
+├── Dockerfile # Docker configuration file
+├── Jenkinsfile # Jenkins pipeline configuration
+├── logs/ # Directory to store test logs
+│ └── test_log.log # Example test log file
+├── POM/ # Page Object Model directory
+│ ├── **init**.py # Initialization file for POM package
+│ ├── locators/ # Directory for storing web element locators
+│ │ └── swag_labs_locators.py # Example locator file
+│ ├── notifications/ # Directory for storing notification messages
+│ │ └── swag_labs_messages.py # Example message file
+│ └── pages/ # Directory for storing page objects
+│ ├── base_page.py # Base page object class
+│ ├── **init**.py # Initialization file for pages package
+│ └── swag_labs_pages.py # Example page object file
+├── pytest.ini # pytest configuration file
+├── reports/ # Directory to store test reports
+│ ├── assets/ # Directory for report assets (e.g., screenshots)
+│ └── report.html # Example HTML test report
+├── requirements.txt # File listing required Python packages
+├── tests/ # Directory containing test scripts
+│ ├── conftest.py # pytest configuration file for fixtures
+│ ├── test_setup.py # Example test setup file
+│ └── test_swag_labs.py # Example test script
+└── utils/ # Directory containing utility modules
+├── data/ # Directory for test data files
+├── helper/ # Directory for helper modules
+└── screenshots/ # Directory to store screenshots captured during tests
 ```
 
 This section provides an organized view of the project's directory structure, with brief descriptions of each file and directory's purpose. It helps users understand how the project is organized and where to find specific components.
@@ -135,6 +161,8 @@ Contributions are welcome! Fork the repository, make changes, and submit pull re
 ## License
 
 This project is licensed under the MIT License.
+
 ```
 
 This complete README.md file includes all the sections you requested, providing users with a comprehensive guide to understanding and using the Python Selenium pytest framework.
+```
